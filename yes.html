@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- Floating Background Hearts -->
 
 <div class="background-hearts">
     <span style="left:10%;">💗</span>
@@ -23,27 +19,28 @@
 
 <div class="glass">
 
-```
-<h1>Glynss 💖</h1>
+    <h1>Glynss 💖</h1>
 
-<div class="final-message">
-    I knew it!!! 💕<br><br>
-    My beautiful Kung Fu Konda,<br>
-    I love you more than words,<br>
-    more than time,<br>
-    more than 1.5 years could ever measure.<br><br>
-    Forever with you sounds perfect. 💍✨
-</div>
-```
+    <div class="final-message">
+        I knew it!!! 💕<br><br>
+        My beautiful Kung Fu Konda,<br>
+        I love you more than words,<br>
+        more than time,<br>
+        more than 1.5 years could ever measure.<br><br>
+        Forever with you sounds perfect. 💍✨
+    </div>
 
 </div>
 
-<audio id="music" src="music.mp3" autoplay></audio>
+<audio id="music" src="music.mp3"></audio>
 
 <script>
     const music = document.getElementById("music");
 
-    // Some browsers block autoplay — allow click to start
+    window.addEventListener("load", () => {
+        music.play().catch(() => {});
+    });
+
     document.body.addEventListener("click", () => {
         music.play();
     });
