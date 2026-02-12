@@ -1,0 +1,100 @@
+body {
+margin: 0;
+font-family: 'Georgia', serif;
+background: linear-gradient(135deg, #ff9ec4, #ffcce6, #ffe6f2);
+text-align: center;
+color: white;
+overflow-x: hidden;
+}
+
+.photo-container {
+margin-top: 40px;
+}
+
+.main-photo {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+object-fit: cover;
+border: 5px solid white;
+box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+font-size: 3em;
+margin-top: 20px;
+}
+
+h2 {
+font-size: 2em;
+margin-top: 30px;
+}
+
+p {
+width: 80%;
+margin: 15px auto;
+font-size: 1.3em;
+line-height: 1.6em;
+}
+
+.buttons {
+margin-top: 30px;
+}
+
+button {
+font-size: 1.1em;
+padding: 15px 25px;
+margin: 10px;
+border-radius: 30px;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#yesBtn {
+background-color: #ff4d6d;
+color: white;
+box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+}
+
+#yesBtn:hover {
+transform: scale(1.15);
+background-color: #ff1e4d;
+}
+
+#noBtn {
+background-color: white;
+color: #ff4d6d;
+position: absolute;
+}
+
+.hidden {
+display: none;
+}
+
+.final-message {
+margin-top: 40px;
+font-size: 1.8em;
+}
+
+.heart {
+position: fixed;
+top: -10px;
+font-size: 24px;
+animation: fall linear infinite;
+}
+
+@keyframes fall {
+to {
+transform: translateY(100vh);
+}
+}
+
+.fade-in {
+animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
