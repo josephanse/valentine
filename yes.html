@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I Love You Glynss 💕</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating Background Hearts -->
+
+<div class="background-hearts">
+    <span style="left:10%;">💗</span>
+    <span style="left:25%; animation-duration:14s;">💖</span>
+    <span style="left:40%; animation-duration:18s;">💕</span>
+    <span style="left:60%; animation-duration:16s;">💘</span>
+    <span style="left:75%; animation-duration:20s;">💓</span>
+    <span style="left:90%; animation-duration:13s;">💞</span>
+</div>
+
+<div class="glass">
+
+```
+<h1>Glynss 💖</h1>
+
+<div class="final-message">
+    I knew it!!! 💕<br><br>
+    My beautiful Kung Fu Konda,<br>
+    I love you more than words,<br>
+    more than time,<br>
+    more than 1.5 years could ever measure.<br><br>
+    Forever with you sounds perfect. 💍✨
+</div>
+```
+
+</div>
+
+<audio id="music" src="music.mp3" autoplay></audio>
+
+<script>
+    const music = document.getElementById("music");
+
+    // Some browsers block autoplay — allow click to start
+    document.body.addEventListener("click", () => {
+        music.play();
+    });
+
+    function createHearts() {
+        for (let i = 0; i < 80; i++) {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "💖";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            document.body.appendChild(heart);
+        }
+    }
+
+    createHearts();
+</script>
+
+</body>
+</html>
