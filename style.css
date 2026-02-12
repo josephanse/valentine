@@ -1,129 +1,121 @@
 body {
-margin: 0;
-font-family: 'Georgia', serif;
-color: white;
-text-align: center;
-overflow-x: hidden;
-min-height: 100vh;
+    margin: 0;
+    font-family: Georgia, serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
 
-```
-background: linear-gradient(-45deg, #ff9ec4, #ffc3e6, #ffb6d9, #ffd6ec);
-background-size: 400% 400%;
-animation: gradientBG 12s ease infinite;
-```
-
+    background: linear-gradient(-45deg, #ff9ec4, #ffc3e6, #ffb6d9, #ffd6ec);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
 }
 
 @keyframes gradientBG {
-0% { background-position: 0% 50%; }
-50% { background-position: 100% 50%; }
-100% { background-position: 0% 50%; }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .glass {
-background: rgba(255, 255, 255, 0.15);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-border-radius: 20px;
-padding: 40px;
-width: 85%;
-max-width: 700px;
-margin: 60px auto;
-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 85%;
+    max-width: 700px;
+    margin: 60px auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .photo-container {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .main-photo {
-width: 240px;
-height: 240px;
-border-radius: 50%;
-object-fit: cover;
-border: 5px solid rgba(255,255,255,0.7);
-box-shadow: 0 0 25px rgba(255,255,255,0.5);
-transition: 0.4s ease;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.7);
+    box-shadow: 0 0 25px rgba(255,255,255,0.5);
+    transition: 0.4s ease;
 }
 
 .main-photo:hover {
-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 h1 {
-font-size: 3em;
-margin-top: 20px;
-text-shadow: 0 0 15px rgba(255,255,255,0.8);
+    font-size: 3em;
+    margin-top: 20px;
 }
 
 h2 {
-font-size: 2em;
-margin-top: 30px;
+    font-size: 2em;
+    margin-top: 30px;
 }
 
 p {
-font-size: 1.3em;
-line-height: 1.7em;
+    font-size: 1.3em;
+    line-height: 1.7em;
 }
 
 .buttons {
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 button {
-font-size: 1.1em;
-padding: 15px 28px;
-margin: 10px;
-border-radius: 30px;
-border: none;
-cursor: pointer;
-transition: all 0.3s ease;
+    font-size: 1.1em;
+    padding: 15px 28px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #yesBtn {
-background: linear-gradient(45deg, #ff4d6d, #ff1e4d);
-color: white;
-box-shadow: 0 0 20px rgba(255, 77, 109, 0.8);
+    background: linear-gradient(45deg, #ff4d6d, #ff1e4d);
+    color: white;
 }
 
 #yesBtn:hover {
-transform: scale(1.15);
-box-shadow: 0 0 30px rgba(255, 30, 77, 1);
+    transform: scale(1.15);
 }
 
 #noBtn {
-background: white;
-color: #ff4d6d;
-position: absolute;
+    background: white;
+    color: #ff4d6d;
+    position: absolute;
 }
 
 .final-message {
-margin-top: 40px;
-font-size: 1.8em;
-line-height: 1.8em;
-text-shadow: 0 0 10px rgba(255,255,255,0.8);
+    margin-top: 40px;
+    font-size: 1.8em;
+    line-height: 1.8em;
 }
 
 .background-hearts span {
-position: fixed;
-bottom: -50px;
-font-size: 20px;
-animation: floatUp 15s linear infinite;
-opacity: 0.6;
+    position: fixed;
+    bottom: -50px;
+    font-size: 20px;
+    animation: floatUp 15s linear infinite;
+    opacity: 0.6;
 }
 
 @keyframes floatUp {
-from { transform: translateY(0); }
-to { transform: translateY(-110vh); }
+    from { transform: translateY(0); }
+    to { transform: translateY(-110vh); }
 }
 
 .heart {
-position: fixed;
-top: -10px;
-font-size: 24px;
-animation: fall linear infinite;
+    position: fixed;
+    top: -10px;
+    font-size: 24px;
+    animation: fall linear infinite;
 }
 
 @keyframes fall {
-to { transform: translateY(100vh); }
+    to { transform: translateY(100vh); }
 }
